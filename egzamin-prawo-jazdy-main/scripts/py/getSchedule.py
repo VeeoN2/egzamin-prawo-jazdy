@@ -122,7 +122,7 @@ while (True):
         driver = webdriver.Chrome(service=service, options=options)
         #action = ActionChains(driver)
 
-        webhookUrl="https://discord.com/api/webhooks/1317189912705105961/n3HhzHi1hoIPwdfHcX-I9mRJVkDzT0Nrl314h3HUzlTZyjV2RTifIJD0ybUZFJ8qaQGj"
+        webhookUrl=os.environ.get('DISCORDURL')
         previousExamInfo = "NULL"
 
         while (True):
